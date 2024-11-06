@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('img/realistic-scene-with-health-worker-taking-care-elderly-patient.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-box {
+    padding: 50px;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #A7DCFA; /* Alteração da cor do texto principal */
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #000000;
+    
+}
+
+.textbox {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #A7DCFA; /* Alteração da cor da linha de entrada */
+}
+
+.textbox input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #000000; /* Alteração da cor do texto digitado */
+}
+
+.textbox input::placeholder {
+    color: #000000; /* Cor do placeholder */
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.options label {
+    font-size: 16px;
+    color: #000000; /* Cor do texto de "Lembrar-me" */
+}
+
+.options a {
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #A7DCFA;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #89BFE0;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.btn1 {
+    background-color: transparent; /* Fundo transparente */
+    color: rgb(0, 0, 0); /* Texto preto */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}

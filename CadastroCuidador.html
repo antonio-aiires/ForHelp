@@ -1,0 +1,91 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForHelp</title>
+    <link rel="stylesheet" href="CadastroCuiadador.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="register-box">
+            <h1 class="fonte1">Crie sua conta</h1>
+            <form>
+                <div class="row">
+                    <div class="textbox">
+                        <input type="text" placeholder="Nome" name="nome" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" placeholder="Sobrenome" name="sobrenome" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="textbox">
+                        <input type="text" placeholder="CPF" name="cpf" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="date" placeholder="Data de Nascimento" name="nascimento" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="textbox">
+                        <input type="text" placeholder="Sexo" name="sexo" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" placeholder="Celular" name="celular" required>
+                    </div>
+                </div>
+                <div class="textbox full-width">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="row">
+                    <div class="textbox">
+                        <input type="text" placeholder="RG" name="rg" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" placeholder="Peso (kg)" name="peso" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="textbox">
+                        <input type="text" placeholder="Tempo de experiência" name="experiencia" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" placeholder="Altura (cm)" name="altura" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="textbox">
+                        <input type="password" placeholder="Senha" name="senha" required>
+                    </div>
+                </div>
+
+                <h2>Conte um pouco sobre sua história como cuidador</h2>
+                <div class="textbox full-width">
+                    <textarea placeholder="Cite as patologias que você já trabalhou, tempo de experiência, suas habilidades, defeitos..." name="patologias" rows="4" required></textarea>
+                </div>
+
+                <h3>Insira os seguintes documentos para avaliação:</h3>
+                <ul class="document-list">
+                    <li>*Histórico criminal</li>
+                    <li>*Frente e verso do RG</li>
+                    <li>*Foto segurando o RG ao lado do rosto</li>
+                    <li>*Certificados que comprovem sua experiência</li>
+                </ul>
+                <button class="btn-upload">*Insira os arquivos</button>
+
+                <a href="loginCuidador.html">
+                    <button type="button" class="btn">Cadastrar</button>
+                </a>
+            </form>
+            <a href="loginCuidador.html" class="btn1">Já sou cuidador</a>
+        </div>
+    </div>
+
+</body>
+</html>

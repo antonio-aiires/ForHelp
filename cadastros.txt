@@ -1,0 +1,40 @@
+
+    Nome: jose
+    Sobrenome: santos
+    CPF: 123456
+    Data de Nascimento: 2024-10-27
+    Sexo: masculino
+    Celular: 494984
+    Email: sadasd@gmail.com
+    RG: 384348
+    Peso: 75
+    Altura: 175
+    Senha: 3424234
+    Responsável: N/A
+    Sobrenome Responsável: N/A
+    CPF Responsável: N/A
+    Data de Nascimento Responsável: N/A
+    Email Responsável: N/A
+    Celular Responsável: N/A
+  
+
+
+    Nome: lucio
+    Sobrenome: god
+    CPF: 25649
+    Data de Nascimento: 2024-10-28
+    Sexo: masculino
+    Celular: 3993403
+    Email: jsk@gmail.com
+    RG: 231
+    Peso: 70
+    Altura: 175
+    Senha: 1351
+    Responsável: N/A
+    Sobrenome Responsável: N/A
+    CPF Responsável: N/A
+    Data de Nascimento Responsável: N/A
+    Email Responsável: N/A
+    Celular Responsável: N/A
+  
+

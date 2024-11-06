@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForHelp</title>
+    <link rel="stylesheet" href="CadastroIdoso.css"> <!-- Vincula o arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <div class="register-box">
+            <h1>Crie sua conta</h1>
+            <form action="/cadastrar" method="POST">
+                <div class="row">
+                    <div class="textbox">
+                        <input type="text" placeholder="Nome" name="nome" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" placeholder="Sobrenome" name="sobrenome" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="textbox">
+                        <input type="text" placeholder="CPF" name="cpf" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="date" placeholder="Data de Nascimento" name="nascimento" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="textbox">
+                        <input type="text" placeholder="Sexo" name="sexo" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" placeholder="Celular" name="celular" required>
+                    </div>
+                </div>
+                <div class="textbox full-width">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="row">
+                    <div class="textbox">
+                        <input type="text" placeholder="RG" name="rg" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" placeholder="Peso" name="peso" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="textbox">
+                        <input type="text" placeholder="Altura (cm)" name="altura" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="password" placeholder="Senha" name="senha" required>
+                    </div>
+                </div>
+
+                <!-- Checkbox para responsável -->
+                <div class="responsavel-checkbox">
+                    <label><input type="checkbox" id="responsavel-checkbox"> Com Responsável</label>
+                </div>
+
+                <!-- Dados do Responsável -->
+                <div id="responsavel-info" class="responsavel-info">
+                    <h2>Dados do Responsável:</h2>
+                    <div class="row">
+                        <div class="textbox">
+                            <input type="text" placeholder="Nome" name="nome_responsavel">
+                        </div>
+                        <div class="textbox">
+                            <input type="text" placeholder="Sobrenome" name="sobrenome_responsavel">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="textbox">
+                            <input type="text" placeholder="CPF" name="cpf_responsavel">
+                        </div>
+                        <div class="textbox">
+                            <input type="date" placeholder="Data de Nascimento" name="nascimento_responsavel">
+                        </div>
+                    </div>
+                    <div class="textbox full-width">
+                        <input type="email" placeholder="Email" name="email_responsavel">
+                    </div>
+                    <div class="textbox full-width">
+                        <input type="text" placeholder="Celular" name="celular_responsavel">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+            <a href="loginIdoso.html" class="btn1">Já sou cliente</a>
+        </div>
+    </div>
+
+    <script>
+        // Lógica para exibir ou esconder os dados do responsável
+        document.getElementById("responsavel-checkbox").addEventListener("change", function() {
+            var responsavelInfo = document.getElementById("responsavel-info");
+            if (this.checked) {
+                responsavelInfo.classList.add("active");
+            } else {
+                responsavelInfo.classList.remove("active");
+            }
+        });
+    </script>
+</body>
+</html>

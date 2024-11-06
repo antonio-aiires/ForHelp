@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForHelp</title>
+  <link rel="stylesheet" href="pagamento.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/image 5.png" alt="Logo"> <!-- Substitua "logo.png" pelo caminho da sua imagem -->
+  </div>
+  <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pagamentos</a></li>
+        <li><a href="#">Histórico</a></li>
+        <li><a href="#">Editar Perfil</a></li>
+    </ul>
+  </header>
+
+
+  <main>
+    <div class="main-container">
+      <section class="cliente-form">
+        <h2>Informações do Cliente</h2>
+        <form>
+          <div class="input-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+          </div>
+          <div class="input-group">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+          </div>
+          <div class="input-group">
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input type="date" id="data-nascimento" name="data-nascimento">
+          </div>
+          <div class="input-group">
+            <label for="sexo">Sexo</label>
+            <select id="sexo" name="sexo">
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="nacionalidade">Nacionalidade</label>
+            <select id="nacionalidade" name="nacionalidade">
+              <option value="brasil">Brasil</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="contato">Informação de Contato</label>
+            <input type="email" id="contato" name="contato" placeholder="seuemail@example.com">
+          </div>
+          <button type="submit" class="confirmar-btn">Confirmar Dados</button>
+        </form>
+      </section>
+
+      <section class="detalhe-servico">
+        <h2>Detalhes de serviço</h2>
+        <ul>
+          <li>Horas: <span>BRL 80,00</span></li>
+          <li>Taxa: <span>10%</span></li>
+          <li>Preço Final: <span>BRL 88,00</span></li>
+        </ul>
+      </section>
+
+      <section class="formas-pagamento">
+        <h2>Formas de Pagamento</h2>
+        <div class="payment-options">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+          <img src="https://logopng.com.br/logos/visa-17.png" alt="Visa">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Logo_-_pix_powered_by_Banco_Central_%28Brazil%2C_2020%29.png/1200px-Logo_-_pix_powered_by_Banco_Central_%28Brazil%2C_2020%29.png" alt="Pix">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png" alt="PayPal">
+        </div>
+        <div class="total">
+          <span>Total:</span>
+          <strong>BRL 88,00</strong>
+        </div>
+
+        <div class="termos">
+          <input type="checkbox" id="aceito-termos" name="aceito-termos">
+          <label for="aceito-termos">Aceito os <a href="#">termos e condições</a></label>
+        </div>
+
+        <button type="button" class="contratar-btn" disabled>Contratar Serviços</button>
+      </section>
+    </div>
+  </main>
+  <script>
+    // Script para habilitar o botão "Contratar serviços" ao marcar o checkbox
+    document.getElementById('aceito-termos').addEventListener('change', function() {
+      const contratarBtn = document.querySelector('.contratar-btn');
+      if (this.checked) {
+        contratarBtn.disabled = false;
+        contratarBtn.classList.add('enabled');
+      } else {
+        contratarBtn.disabled = true;
+        contratarBtn.classList.remove('enabled');
+      }
+    });
+  </script>
+</body>
+<hr class="linhaFim">
+</html>
+

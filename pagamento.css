@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+header {
+    background-color: #a7e1fb;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-right: 15px;
+}
+
+.header-content h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.balance {
+    font-size: 1.1em;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.brl-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+main {
+    flex: 1; /* Permite que o conteúdo principal expanda para preencher o espaço disponível */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.cliente-form {
+    max-width: 900px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.confirmar-btn {
+    background-color: #ff6c00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.detalhe-servico ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detalhe-servico li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.formas-pagamento .payment-options img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.termos {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.termos input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.termos a {
+    color: #ff6c00;
+    text-decoration: none;
+}
+
+.termos a:hover {
+    text-decoration: underline;
+}
+
+.contratar-btn {
+    background-color: #ccc;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contratar-btn.enabled {
+    background-color: #ff6c00;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: relative; /* Permite que o rodapé fique no limite inferior sem sobreposição */
+}
+
+.logo {
+    margin-top: 1px;
+    margin-right: 0px /* Espaço à direita da logo */
+}
+
+.logo img {
+    max-height: 60px; /* Ajuste a altura máxima da logo */
+    padding: 0.2em;
+}
+
+
+  header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A7DCFA;
+    padding: 0;
+    position: relative;
+  }
+  
+  header h1 {
+    font-size: 1.5em;
+  }
+  
+  .nav-center {
+    margin-left: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 15px;
+  }
+
+  .nav-container {
+    display: flex; /* Faz com que os navs fiquem lado a lado */
+    justify-content: center; /* Centraliza os navs no contêiner */
+}
+  
+  header .user-info {
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Permite que o nav ocupe o espaço restante */
+    justify-content: center; /* Centraliza o conteúdo do nav */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 70px; /* Espaçamento ao redor da lista */
+  }
+  
+  nav ul li {
+    margin: 0 50px; /* Espaçamento maior entre os itens da lista */
+  }
+  
+  nav a {
+    color: black; /* Texto preto */
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .linhaFim {
+    margin-top: 20px;
+    width: 100%;
+    height: 70px;
+    flex-shrink: 0;
+    background: #A7DCFA;
+    justify-content: center;
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center
+  }
+  
+  .linhaFim::before {
+    content: "ForHelp";
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }

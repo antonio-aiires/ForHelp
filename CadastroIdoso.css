@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('realistic-scene-with-health-worker-taking-care-elderly-patient.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.register-box {
+    padding: 30px;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #A7DCFA;
+}
+
+.textbox {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #A7DCFA;
+    width: 100%;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #000000;
+}
+
+.textbox input::placeholder {
+    color: #000000;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    padding: 5px;
+    background-color: #A7DCFA;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #89BFE0;
+}
+
+.responsavel-checkbox {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.responsavel-info {
+    display: none;
+    margin-top: 15px;
+}
+
+.responsavel-info.active {
+    display: block;
+}
+
+p {
+    margin-top: 15px;
+    color: #000000;
+}
+
+h2 {
+    color: #A7DCFA;
+    margin-bottom: 10px;
+}
+
+.btn1 {
+    display: inline-block; /* Muda para inline-block */
+    background-color: transparent; /* Fundo transparente */
+    color: rgb(0, 0, 0); /* Texto branco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none; /* Remove a borda */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px; /* Margem superior */
+    text-decoration: none; /* Remove o sublinhado do link */
+}

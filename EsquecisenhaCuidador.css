@@ -1,0 +1,132 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('img/senior-woman-talking-with-her-doctor.jpg') no-repeat center center fixed ;
+    background-size: 1920px 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-box {
+    padding: 50px;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #A7DCFA;
+}
+
+.textbox {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #EDA647;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #000000;
+}
+
+.textbox input::placeholder {
+    color: #000000;
+}
+
+.btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: #EDA647;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    color: var(--Schemes-Scrim, #000);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.btn:hover {
+    background-color: #EDA647;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #000000;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.fonte1 {
+    margin-bottom: -0px;
+    color: #EDA647;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fonte2 {
+    color: #5555555e;
+text-align: center;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.fonte3 {
+    color: #5555555e;
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 20px;
+}
+
+.fonte4 {
+    color: var(--Schemes-Scrim, #000);
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
